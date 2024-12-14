@@ -1,0 +1,48 @@
+.flex-container{
+
+    border: 1px solid black;
+    display: flex;
+    /* flex-wrap:wrap; */
+    /* flex-flow: row wrap ;  */
+    /* justify-content: center; */
+    /* align-items: baseline ; */
+    /* align-content: center; */
+    /* flex-direction: row; */
+    background-color: darkblue;
+    height: 600px;
+
+}
+
+.flex-container>div{
+    border: 1px solid black ;
+    background-color: white ;
+    margin:15px;
+    /* height: 50px; */
+    /* width: 100px; */
+    padding: 20px;
+    font-size: 30px;
+    /* text-align: center; */
+    /* text-align: center; */
+    /* width: 50px; */
+}
+
+.flex-container1 {
+    display: flex;
+    height: 200px;
+    align-items: baseline;
+    background-color: DodgerBlue;
+}
+
+.flex-container1 > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+
+
+
+

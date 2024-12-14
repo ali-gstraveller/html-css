@@ -1,0 +1,151 @@
+flexbox:
+
+1. to ue flexible layout you should have a parent element property set to flex,
+2. the children will automatically get the flex values
+
+flex-direction:-
+
+The flex direction column property set the flex direction to column.  and row vice versa. 
+
+
+Reverse property :
+
+the colum reverse property stack in column but reversely. and row reverse vice versa.
+
+flex-wrap :
+
+    wrap:
+    The flex wrap : wrap property , specifies if the element wrap if necesssary. wuthout this property
+
+    flexwrap = nowrap, is enabled by default.
+
+    wrap-reverse:the wrap reverse property wrap the elements but in reverse order
+
+flexflow;
+
+    Row wrap : The row wrap property specify wrap and flex direction in one property.
+
+Justify content :
+ 
+     center :  
+             property will justify flex items in center.
+
+    flex-start :
+                will start the elements from start.
+
+    flex-end:
+            this will align all the properties to the end of the container
+
+    space around :
+                    justify content space arounf will create spaces before , between and after the 
+                    lines.
+
+    space - between :
+                    space between property will create space between the lines only.
+
+
+align-items :
+
+        flex-start : 
+                    will align the items at the top of the container.
+
+        flex-end: 
+                will align the items at the bottom of the container.
+
+        stretch:
+                stretches the flex items to fill the conatainer. (this is default)
+
+        baseline:
+                 will align the items with the text baseline of the items.
+
+align-content:
+                The align-content property is used to align the flex lines.
+
+        space-between:
+                     to have equal space between items of flex container.
+
+        space-around :
+                     space around property creates equals spaces before , between and after the container.
+
+        stretch :
+                this property stretches the height of the flex items to take the remaining space completely.(this is
+                default)
+
+        center :
+                this property align the flex items to the center of the container.
+
+        flex-start:
+                 this property aling the flex items to the start of the container.
+
+        flex-end:
+                this property align the flex items to the end of the container.
+        
+Perfect Centering:
+
+                set up the justify content and align items to center to perfect align in the center.
+
+                                        CSS FLEX ITEMS :
+
+CSS Child Items:
+
+                The direct child of the flex-conatiner become flex (flexible) items.
+
+flex properties:
+
+        order :
+
+                you can specify the order of the flex items , which means , first items is not meant to appear first 
+                everytime. 
+                in individual item via
+                // style=order:[order number]   // this value should always be in number e.g  (1,2,3)
+
+        flex-grow:
+                You can specify how much a flex child takes place via flex grow property.
+
+        flex-shrink :
+                        you can specify how much flex item will shrink via flex-shrink property.
+                        // style="flex-shrink:0" // this means (applied) item will not shrink.
+
+        flex-basis:
+                specifies the initial width of a flex item.
+                // syntax style="flex-basis:200px"
+
+        flex:
+                flex property is short hand for flex grow, flex basis and flex shrink properties
+                // syntax style="flex: 0 0 100px"  
+
+        align self:
+                        align self (center) property align the item vertically in center.
+                        syntax style="align-self:center"
+
+                        align self (flex start) align the item in the start of the container.
+
+                        align the item (flex end) align the item in the end of the container.
+
+                        [Cont]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+

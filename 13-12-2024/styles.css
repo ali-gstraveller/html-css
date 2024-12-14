@@ -1,0 +1,54 @@
+
+
+.topnav a {
+    float:left;
+}
+
+.LOGO{
+
+background-color: green;
+padding: 5px;
+color: white;
+}
+
+.menu{
+    float: right;
+    border: 1px solid white;
+}
+
+.menu .icon{
+    display: none;
+}
+
+@media (max-width:800px){
+
+    
+    
+    .menu a{
+
+        display: none;
+    }
+
+
+    
+    .menu.responsive a{
+
+        display: block;
+        float: none;
+        text-align: right;
+ 
+    }
+
+    .menu .icon{
+        display: block;
+    }
+
+    .menu.responsive{
+
+         display: block;
+        float: none;
+    }
+
+
+}
+

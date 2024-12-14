@@ -1,0 +1,23 @@
+CSS Box Sizing:
+
+The CSS box-sizing property allows us to include the padding and border in an element's
+total width and height.
+
+As you know if we add padding to any element after telling width and height , it takes more place
+then specified.
+
+to solve this problem, If you set box-sizing: border-box; on an element, padding and border are
+included in the width and height :
+
+The code below ensures that all elements are sized in this more intuitive way. Many browsers 
+already use box-sizing: border-box; for many form elements (but not all - which is why inputs and
+text areas look different at width: 100%;).
+
+Applying this to all elements is safe and wise:
+
+
+
+
+
+
+

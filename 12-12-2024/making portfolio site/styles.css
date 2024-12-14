@@ -1,0 +1,13 @@
+.navbar a{
+    float: left;
+}
+
+.navbar-right a{
+    float: right;
+}
+
+@media(max-width:800px){
+    .navbar a{
+    width: 100%;
+    }
+}
