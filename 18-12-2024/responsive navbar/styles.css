@@ -1,0 +1,30 @@
+.topnav a {
+    float: left;
+}
+
+.menu a {
+    float: right;
+}
+
+.icon{
+    display: none;
+}
+
+@media (max-width:800px){
+
+    
+    .menu a {
+        display: none;
+    }
+
+    .menu .icon{
+        display: block;
+    }
+
+    .menu.responsive a{
+        display: block;
+        float: none;
+        text-align: right;
+    }
+
+}

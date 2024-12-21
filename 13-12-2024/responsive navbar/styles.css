@@ -1,5 +1,3 @@
-
-
 .topnav a {
     float:left;
 }
@@ -21,16 +19,12 @@ color: white;
 }
 
 @media (max-width:800px){
-
-    
-    
+   
     .menu a{
 
         display: none;
     }
-
-
-    
+ 
     .menu.responsive a{
 
         display: block;
@@ -48,7 +42,6 @@ color: white;
          display: block;
         float: none;
     }
-
 
 }
 

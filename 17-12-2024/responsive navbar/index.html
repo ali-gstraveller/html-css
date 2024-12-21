@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/86ec299db5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="navbar">
+
+        <a href="">LOGO</a>
+
+        <div  id="menu" class="menu">
+
+            <a  class="icon" href="javascript:void(0)" onclick="responsive()" ><i id="icon-tag" class="fa-solid fa-bars"></i></a>
+            <a href="">HOME</a>
+            <a href="">ABOUT</a>
+            <a href="">CONTACT US</a>
+            <a href="">SERVICES</a>
+
+        </div>
+
+    </div>
+
+<script >
+
+var x = document.getElementById('menu');
+var y = document.getElementById('icon-tag')
+
+function responsive(){
+
+    if (x.className == 'menu'){
+    x.className += " responsive";
+    y.className = 'fa-solid fa-xmark'
+}
+else if (x.className == "menu responsive") {
+        x.className = 'menu'
+        y.className = 'fa-solid fa-bars'
+}
+
+}
+
+  
+
+</script>
+
+
+</body>
+
+</html>

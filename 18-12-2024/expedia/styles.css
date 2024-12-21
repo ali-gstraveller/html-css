@@ -1,0 +1,22 @@
+.top-nav{
+    border: 1px solid black;
+}
+
+
+.top-nav div {
+    display: inline;
+    /* border: 1px solid black; */
+}
+
+.s-t{
+    border: 1px solid black;
+}
+
+
+.menu {
+    float: right;
+}
+img{
+    padding: 5px;
+
+}
