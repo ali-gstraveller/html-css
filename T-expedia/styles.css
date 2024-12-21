@@ -1,0 +1,55 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: CentraNo2-Medium;
+    src: url(CentraNo2-Medium.otf);
+}
+
+.top-nav{
+    /* border: 1px solid black; */
+
+    display: flex;
+    align-items: center;
+    height: 70px;
+    border-bottom: 1px solid lightgray;
+    box-shadow: 0px 1px 10px 0 lightgray ;
+    font-family: 'CentraNo2-Medium', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.top-nav a{
+    color: black;
+}
+.top-nav a:hover {
+    color: #1668e3;
+}
+.get-app:hover{
+    background-color: #ebf2fc ;
+    color: black !important;
+    border: 1px solid  #ebf2fc ;
+}
+
+.s-t{
+    /* border: 1px solid black; */
+}
+
+
+.menu {
+   
+    text-align: right;
+    /* border: 1px solid black; */
+}
+
+
+img{
+    padding: 5px;
+
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    margin-left: 30px;
+}

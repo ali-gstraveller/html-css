@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .drop-down-content{
+
+        display: none;
+        width: 160px;
+        }
+
+        .drop-down-content a {
+            display: block;
+        }
+
+        .drop-down-content a:hover{
+            
+            background-color: lightcyan;
+        }
+
+        .show {
+            display: block;
+            border: 1px solid black;
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1> drop down menu </h1>
+
+    <div class="drop-down">
+
+        <div  id="drop-down" class="drop-down">
+                
+        <button onclick="myFunction();" > menu  </button>
+
+            <div id="drop-down-content" class="drop-down-content">
+
+            <a href="">HOME</a>
+            <a href="">ABOUT US</a>
+            <a href="">CONTACT US</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        function myFunction(){
+
+            document.getElementById("drop-down-content").classList.toggle("show")
+
+        }
+
+
+    </script>
+
+
+</body>
+</html>
