@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: CentraNo2-Medium;
+    src: url(CentraNo2-Medium.otf);
+}
+
+.top-nav{
+
+    display: flex;
+    align-items: center;
+    height: 70px;
+    border-bottom: 1px solid lightgray;
+    box-shadow: 0px 1px 10px 0 lightgray ;
+    font-family: 'CentraNo2-Medium', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.top-nav a{
+    color: black;
+}
+
+.top-nav a:hover {
+    color: #1668e3;
+}
+
+.get-app:hover{
+    background-color: #ebf2fc ;
+    color: black !important;
+    border: 1px solid  #ebf2fc ;
+}
+
+.menu {
+   
+    text-align: right;
+
+}
+
+img{
+    padding: 5px;
+
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.drop-down {
+    display: block;
+
+}
+
+.drop-down-content{
+    display: none;
+    box-shadow: 0px 1px 4px 0px ;
+    background-color: white;
+    margin-top: 20px;
+
+} 
+
+.drop-down-content a{
+
+    width: 300px ;
+    display: block;
+    height: 50px;
+    padding-top: 25px;
+    padding-left: 30px;
+    margin-left: 0px;
+}
+
+.drop-down-content a:hover{
+    
+    background-color: #f5f3f2 ;
+    color: black;
+
+}
+
+.visible{
+    display: block;
+}
+
+@media (max-width:1000px){
+    .language{
+        display: none;
+    }
+
+    .property{
+        display: none;
+    }
+    .support{
+        display: none;
+    }
+
+}
+
+@media (max-width:600px){
+    .message{
+        display: none;
+    }
+
+    .trip{
+        display: none;
+    }
+    .drop-down{
+        display: none;
+    }
+
+
+}
+

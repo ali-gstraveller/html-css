@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    height: 30px;
+    width: 100%;
+    background-color: orange;
+    display: flex;
+}
+.menu {
+    /* float: right; */
+    border: 1px solid black;
+    text-align: right;
+    align-items: center;
+
+    display: flex;
+
+}
+
+
+
+.logo{
+    padding-top: 5px;
+    padding-left: 5px;
+    align-items: center;
+    border: 1px solid black;
+}
+
+

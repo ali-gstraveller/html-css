@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/86ec299db5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="top-nav">
+
+        <img style="flex-grow: 1; margin: -0.5%; " src="images/logo.svg" height="28" alt="">
+
+        <div class="drop-down" id="drop-down" >
+
+            <a style="flex-grow: 1"    onclick="toggleDisplay()" class="s-t" href="javascript:void(0)">Shop travel <i class="fa-solid fa-chevron-down"></i> </a>
+            <div id="drop-down-content"  class="drop-down-content">
+                <a href=""> <i style="font-size: 20px;padding-right: 10px;" class="fa-solid fa-building"></i> Stays</a>
+                <a href=""><i style="font-size: 20px;padding-right: 4px" class="fa-solid fa-plane"></i> Flights</a>
+                <a href=""><i style="font-size: 20px;padding-right: 10px;" class="fa-solid fa-car"></i> Cars</a>
+                <a href=""> <i class="fa-solid fa-cube" style="font-size: 20px;padding-right: 10px;"></i> Packages</a>
+                <a href=""> <i class="fa-solid fa-list-check" style="font-size: 20px;padding-right: 10px;"></i> Things to do</a>
+                <a href=""> <i class="fa-solid fa-ship" style="font-size: 20px;padding-right: 10px;"></i> Cruises</a>
+            </div>
+        </div>
+        <div style="flex-grow: 8" class="menu">
+            <a href="" class="get-app"
+                style="border: 1px solid silver;padding:5px;border-radius: 25px;text-decoration: none;"> <i
+                    style="color: #1668e3;" class="fa-solid fa-download"></i> Get the app </a>
+            <a class="language"  href=""> <i class="fa-solid fa-globe"></i> English </a>
+            <a class="property" href="">List your property</a>
+            <a class="support" href="">Support </a>
+            <a class="trip" href="">Trips</a>
+            <a  class="message" href=""><i class="fa-solid fa-message"></i></a>
+            <a href="" style="margin-right: 30px "><i style="border:1px solid black;border-radius: 15px;padding: 5px;"
+                    class="fa-solid fa-user"></i>  </a>
+        </div>
+
+    </div>
+    </div>
+
+    <script>
+
+        var dropDownToggle = false;
+
+        function toggleDisplay(){
+
+            if(dropDownToggle){
+
+                document.getElementById('drop-down').style.marginTop = "0px";
+                document.getElementById('drop-down-content').classList.toggle('visible');
+                dropDownToggle = false;
+            }
+            else   if (!dropDownToggle) {
+
+                document.getElementById('drop-down-content').classList.toggle('visible');
+                document.getElementById('drop-down').style.marginTop = "470px";
+                document.getElementById('drop-down-content').style.marginLeft = '30px'
+                dropDownToggle = true                
+            }
+
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

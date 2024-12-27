@@ -5,11 +5,10 @@
 
 @font-face {
     font-family: CentraNo2-Medium;
-    src: url(CentraNo2-Medium.otf);
+    src: url(fonts/CentraNo2-Medium.otf);
 }
 
 .top-nav{
-    /* border: 1px solid black; */
 
     display: flex;
     align-items: center;
@@ -19,37 +18,195 @@
     font-family: 'CentraNo2-Medium', Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
+
 .top-nav a{
     color: black;
 }
+
 .top-nav a:hover {
     color: #1668e3;
 }
+
+ .fa-building{
+    font-size: 20px ;
+    padding-right: 10px ;
+}
+.fa-plane{
+    font-size: 20px;
+    padding-right: 4px
+}
+.fa-car{
+    font-size: 20px;
+    padding-right: 10px
+}
+.fa-cube{
+    font-size: 20px;
+    padding-right: 10px;
+}
+.fa-list-check{
+    font-size: 20px;
+    padding-right: 10px;
+}
+.fa-ship{
+    font-size: 20px;
+    padding-right: 10px
+}
+
+.logo{
+    padding: 5px;
+    flex-grow: 1; 
+    margin: -0.5%;
+
+}
+
+/* left navigation option */
+
+.shop-travel-btn{
+    text-decoration: none;
+    flex-grow: 1;
+}
+
+.drop-down {
+    
+    display: block;
+
+}
+
+.drop-down-content{
+
+    display: none;
+    box-shadow: 0px 1px 4px 0px ;
+    background-color: white;
+    margin-top: 20px;
+
+} 
+
+.drop-down-content a{
+
+    width: 300px ;
+    display: block;
+    height: 30px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    margin-left: 0px;
+    text-decoration: none;
+
+}
+
+.drop-down-content a:hover{
+    
+    background-color: #f5f3f2 ;
+    color: black;
+
+}
+
+/* get app button */
+
+.get-app{
+    border: 1px solid silver;
+    padding:5px;
+    border-radius: 25px;
+    text-decoration: none;
+
+}
+
 .get-app:hover{
     background-color: #ebf2fc ;
     color: black !important;
     border: 1px solid  #ebf2fc ;
 }
 
-.s-t{
-    /* border: 1px solid black; */
+.get-app i{
+    color: #1668e3
 }
 
+/* right navigation  */
 
 .menu {
-   
     text-align: right;
+    flex-grow: 8;
     /* border: 1px solid black; */
+    /* display: block; */
 }
 
-
-img{
-    padding: 5px;
-
-}
-
-a{
+.menu a{
     color: black;
     text-decoration: none;
-    margin-left: 30px;
+    margin-left: 30px ;
 }
+
+.a-profile{
+    margin-right: 30px
+}
+
+.a-profile i {
+    border:1px solid black;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.visible{
+    display: block;
+}
+
+.menu-drop-down  {
+    /* padding: 10px; */
+    margin-top: 15px;
+    box-shadow: 0px 0px 1px  ;
+    background-color: white;
+}
+.menu-drop-down a{
+    padding: 10px;
+}
+.menu-drop-down a{
+    margin-left: 0px;
+    text-align: left;
+}
+
+.menu-drop-down a:hover {
+    background-color: #f5f3f2 ;
+    color: black;
+}
+
+
+@media (max-width:1000px){
+
+    .get-app{
+        /* display: none; */
+        margin-top: 500px;
+    }
+
+    .language{
+        /* display: none; */
+        /* margin-top: 50px; */
+    }
+
+    .property{
+        /* display: none; */
+    }
+
+    .support{
+        /* display: none; */
+    }
+    .menu {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width:600px){
+    
+    .message{
+        display: none;
+    }
+
+    .trip{
+        display: none;
+    }
+
+    .drop-down{
+        display: none;
+    }
+
+}
+

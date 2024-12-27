@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,30 +8,184 @@
     <link rel="stylesheet" href="./styles.css">
     <script src="https://kit.fontawesome.com/86ec299db5.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
     <div class="top-nav">
-            
-        <img style="flex-grow: 1; margin: -0.5%; " src="images/logo.svg" height="28" alt="">
-        
-    <a  style="flex-grow: 1" class="s-t" href="">Shop travel <i class="fa-solid fa-chevron-down"></i>  </a>
 
-<div style="flex-grow: 8" class="menu">
-    <a href="" class="get-app"  style="border: 1px solid silver;padding:5px;border-radius: 25px;text-decoration: none;" >  <i style="color: #1668e3;"  class="fa-solid fa-download"></i>    Get the app </a>
-    <a href=""> <i class="fa-solid fa-globe"></i> English </a>
-    <a href="">List your property</a>
-    <a href="">Support </a>
-    <a href="">Trips</a>
-    <a href=""><i class="fa-solid fa-message"></i></a>
-    <a href="" style="margin-right: 30px "><i style="border:1px solid black;border-radius: 15px;padding: 5px;" class="fa-solid fa-user"></i> ali ajaz </a>
+        <img class="logo" src="images/logo.svg" height="28" alt="">
 
-</div>
+        <div class="drop-down" id="drop-down" >
+            <a onclick="toggleDisplay()" class="shop-travel-btn" href="javascript:void(0)">Shop travel <i class="fa-solid fa-chevron-down"></i> </a>
+            <div id="drop-down-content"  class="drop-down-content">
+                <a href=""> <i class="fa-solid fa-building"></i> Stays</a>
+                <a href=""> <i class="fa-solid fa-plane"></i> Flights</a>
+                <a href=""> <i class="fa-solid fa-car"></i> Cars</a>
+                <a href=""> <i class="fa-solid fa-cube" ></i> Packages</a>
+                <a href=""> <i class="fa-solid fa-list-check" ></i> Things to do</a>
+                <a href=""> <i class="fa-solid fa-ship" ></i> Cruises</a>
+            </div>
+        </div>
+        <div class="menu" id="menu">
+            <a href="javascript:void(0)" id="get-app" class="get-app"> 
+                <i  class="fa-solid fa-download"></i> 
+                Get the app 
+            </a>
+            <a class="language" id="language" href=""> 
+                <i class="fa-solid fa-globe"></i> 
+                English 
+            </a>
+            <a class="property" id="property" href="">
+                List your property
+            </a>
+            <a class="support" id="support" href="">
+                Support 
+            </a>
+            <a class="trip" id="trip" href="">
+                Trips
+            </a>
+            <a  id="message" class="message" href="">
+                <i class="fa-solid fa-message"></i>
+            </a>
+            <a href="javascript:void(0)"  onclick="toggleAccount()" id="profile" class="a-profile" >
+                <i class="fa-solid fa-user">
+                </i>  
+            </a>
+            <div class="menu-drop-down" id="drop-down-menu">
 
+            </div>
         </div>
 
-
-
+    </div>
     </div>
 
+    <script>
+
+var container = document.getElementById('menu');
+var get_app = document.getElementById('get-app');
+var language = document.getElementById('language');
+var property = document.getElementById('property');
+var support = document.getElementById('support');
+var trip = document.getElementById('trip');
+var message = document.getElementById('message');
+var profile = document.getElementById('profile');
+var drop_down_menu = document.getElementById('drop-down-menu');
+const lineBreak = document.createElement('br');
+var profile_drop_down_toggle = false; 
+
+
+// console.log('window.innerWidth=>',window.innerWidth)
+
+window.addEventListener('resize', ()=>{
+
+    console.log("window width changed",window.innerWidth);
+
+    if(window.innerWidth <= 891){
+        container.style.display = 'block';
+        drop_down_menu.style.display = 'block';
+        drop_down_menu.style.display = 'none';
+        language.style.display ='block';
+        support.style.display ='block';
+        property.style.display ='block';
+        profile.parentNode.insertBefore(lineBreak, profile.nextSibling);
+        drop_down_menu.appendChild(language) ;
+        drop_down_menu.appendChild(support) ;
+        drop_down_menu.appendChild(property) ;
+        container.style.marginTop= '10px';
+        drop_down_menu.style.float = 'right';
+        drop_down_menu.style.width = '300px';
+        if ( window.innerWidth <= 600 ){
+            trip.style.display = 'block' ;
+            message.style.display = 'block' ;
+            message.textContent = "Inbox"
+            drop_down_menu.appendChild(message)
+            drop_down_menu.appendChild(trip);
+            
+        }
+        else if (window.innerWidth >= 600 && window.innerWidth <= 890 ){
+            container.appendChild(trip);
+            container.appendChild(message) ;
+            container.insertBefore(message,profile) ;
+            // container.style.border = '1px solid black' ;
+            container.insertBefore(trip,message)
+            trip.style.display = 'inline' ;
+            message.style.display = 'inline' ;
+             var wow=  profile.nextSibling;
+             wow.remove()
+
+        }
+
+    }
+
+    else if(window.innerWidth >= 891){
+        // container.insertBefore(get_app,language);
+        drop_down_menu.style.display = 'inline';
+        language.style.display ='inline';
+        support.style.display ='inline';
+        property.style.display ='inline';
+        // container.appendChild(get_app);
+        container.insertBefore(language,trip);
+        container.insertBefore(property,trip);
+        container.insertBefore(support,trip);
+        container.style.marginTop= '0px';
+        // container.appendChild
+        drop_down_menu.style.border = 'none';
+        drop_down_menu.style.width = '0px';
+        drop_down_menu.style.width = '0px';
+
+    }
+
+}  )
+
+        var dropDownToggle = false;
+
+        function toggleDisplay(){
+
+            if(dropDownToggle){
+
+                document.getElementById('drop-down').style.marginTop = "0px";
+                document.getElementById('drop-down-content').classList.toggle('visible');
+                dropDownToggle = false ;
+            }
+            else if (!dropDownToggle) {
+
+                document.getElementById('drop-down-content').classList.toggle('visible');
+                document.getElementById('drop-down').style.marginTop = "350px";
+                document.getElementById('drop-down').style.marginLeft = "30px";
+                document.getElementById('drop-down-content').style.marginLeft = '30px'
+                dropDownToggle = true ;               
+            }
+
+        }
+
+        function toggleAccount(){
+
+            if (  window.innerWidth <= 891 &&  !profile_drop_down_toggle){
+            
+                drop_down_menu.style.display = 'block';
+                if (window.innerWidth <= 600){
+                    container.style.marginTop = '200px';
+                }
+                else{
+
+                    container.style.marginTop = '130px';
+                }
+                profile_drop_down_toggle = true ;
+            }
+
+            else{
+                
+                drop_down_menu.style.display = 'none';
+                container.style.marginTop = '10px';
+                profile_drop_down_toggle = false ;
+
+            }
+        
+        }
+
+
+    </script>
+
 </body>
+
 </html>
